@@ -1,6 +1,10 @@
 @use "../../custom-properties";
-
 @use "mixin";
 @use "../button";
+@use "../../helpers/visually-hidden";
 
 @include mixin.styles;
+
+.govuk-visually-hidden {
+  @include visually-hidden.govuk-visually-hidden;
+}

@@ -3,5 +3,10 @@
 @use "../error-message";
 @use "../hint";
 @use "../label";
+@use "../../helpers/visually-hidden";
 
 @include mixin.styles;
+
+.govuk-visually-hidden {
+  @include visually-hidden.govuk-visually-hidden;
+}
